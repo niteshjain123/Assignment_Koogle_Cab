@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tv9 Assignment</string>
+    <string name="web_client_id">47656647691-ao2u4r70niuvkvabdtqe6id2ljf0qfut.apps.googleusercontent.com</string>
+
+    <string name="facebook_app_id">959637398378108</string>
+    <string name="fb_login_protocol_scheme">fb959637398378108</string>
+    <string name="facebook_client_token">b613e26460618cf9579af2fec519b548</string>
+
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="network_failure">Network Failure</string>
+    <string name="conversion_error">Conversion Error</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="details">Details</string>
+
+</resources>
