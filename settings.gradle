@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Tv9 Assignment"
+rootProject.name = "Koogle Cab Assignment"
 include ':app'

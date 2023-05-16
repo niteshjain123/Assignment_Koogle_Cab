@@ -7,104 +7,41 @@
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
     android:padding="5dp"
-    android:id="@+id/dashboardItem"
-    android:elevation="10dp">
-
-    <TextView
-        android:id="@+id/tvAuthor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Author : Nitesh Jain"
-        android:maxLines="1"
-        android:layout_marginRight="10dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="13sp"/>
-
-    <TextView
-        android:id="@+id/tvDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="4 May 2023"
-        android:maxLines="1"
-        android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
-        android:drawableTint="@color/black"
-        android:drawablePadding="5dp"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="13sp"/>
-
-    <View
-        android:id="@+id/viewLine"
-        android:layout_width="match_parent"
-        android:layout_height=".1dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/gray"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvAuthor"/>
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imageDashboard"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="5dp"
-        app:layout_constraintDimensionRatio="H,1:1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:src="@drawable/tv9_logo"
-        app:layout_constraintTop_toBottomOf="@id/viewLine"
-        app:layout_constraintStart_toStartOf="parent"
-        android:contentDescription="logo image" />
+    android:id="@+id/dashboardItem">
 
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Airfares to rise on select routes: TAAI; Refund for booked tickets of Go First in limbo"
-        android:maxLines="2"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:ellipsize="end"
-        android:ems="3"
-        app:layout_constraintStart_toEndOf="@id/imageDashboard"
-        app:layout_constraintTop_toTopOf="@id/imageDashboard"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="14sp"/>
-
-    <TextView
-        android:id="@+id/tvShortDec"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="2086x2568"
-        android:visibility="gone"
-        android:textColor="@color/black"
+        android:text="Trips issues and adjustments"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvCreatedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Creted On : 2019-09-08T18:30:00"
+        android:textColor="@color/gray"
         android:textSize="14sp"/>
 
     <TextView
-        android:id="@+id/tvLongDec"
-        android:layout_width="0dp"
+        android:id="@+id/tvUpdateOn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="3dp"
-        app:layout_constraintStart_toEndOf="@id/imageDashboard"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Google tweets teaser\u2019 for Pixel 7a; Titan recommends Rs 10 dividend for FY23; Fincare SFB files IPO papers; NSE warns investors on dabba trading"
-        android:maxLines="2"
-        android:ellipsize="end"
-        android:ems="3"
+        android:text="Updated On : 2019-09-08T18:30:00"
         android:textColor="@color/gray"
-        android:textSize="13sp"/>
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCreatedOn"
+        android:textSize="14sp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
